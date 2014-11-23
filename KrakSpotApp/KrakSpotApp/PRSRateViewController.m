@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Prismake. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PRSRateViewController.h"
 #import "PRSStyleSheet.h"
 
-@interface ViewController ()
+@interface PRSRateViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *rateButtons;
 
 @end
 
-@implementation ViewController
+@implementation PRSRateViewController
 
 - (void)viewDidLoad
 {
