@@ -14,7 +14,7 @@
 
 + (UIColor  *)lightBackgroundColor
 {
-    return [PRSStyleSheet _uiBlue];
+    return [PRSStyleSheet _uiLightBlue];
 }
 
 + (void)configureButtonAppearance:(UIButton *)button style:(PRSButtonStyle)style
@@ -22,7 +22,7 @@
     switch (style) {
         case PRSButtonStyleRound:
             button.layer.cornerRadius = button.bounds.size.width/2.f;
-            button.backgroundColor = [PRSStyleSheet lightBackgroundColor];
+            button.backgroundColor = [PRSStyleSheet _uiDarkBlue];
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case PRSButtonStyleHighlightedRound:
@@ -33,7 +33,7 @@
         case PRSButtonStyleRoundedCorners:
             button.layer.cornerRadius = 9;
             button.backgroundColor = [PRSStyleSheet _roundedButtonBackgroundColor];
-            [button setTitleColor:[PRSStyleSheet _uiBlue] forState:UIControlStateNormal];
+            [button setTitleColor:[PRSStyleSheet _uiLightBlue] forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -52,9 +52,20 @@
     return [UIColor redColor];
 }
 
-+ (UIColor *)_uiBlue
++ (UIColor *)_uiLightBlue
 {
-    return [UIColor blueColor];
+    return [UIColor colorWithRed:0.
+                           green:191./255.
+                            blue:236./255.
+                           alpha:1.];
+}
+
++ (UIColor *)_uiDarkBlue
+{
+    return [UIColor colorWithRed:0.
+                           green:149./255.
+                            blue:222./255.
+                           alpha:1.];
 }
 
 @end

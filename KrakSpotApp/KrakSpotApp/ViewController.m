@@ -7,21 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "PRSStyleSheet.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *rateButtons;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view.backgroundColor = [PRSStyleSheet lightBackgroundColor];
+    [self.rateButtons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
+        [PRSStyleSheet configureButtonAppearance:obj
+                                           style:PRSButtonStyleRound];
+    }];
 }
 
 @end
