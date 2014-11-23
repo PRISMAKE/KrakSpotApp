@@ -14,6 +14,7 @@
 		907B7A7D1A21F04F00E0845A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907B7A7C1A21F04F00E0845A /* Images.xcassets */; };
 		907B7A801A21F04F00E0845A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 907B7A7E1A21F04F00E0845A /* LaunchScreen.xib */; };
 		907B7A8C1A21F04F00E0845A /* KrakSpotAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A8B1A21F04F00E0845A /* KrakSpotAppTests.m */; };
+		907B7A971A21F9BF00E0845A /* PRSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A961A21F9BF00E0845A /* PRSStyleSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		907B7A851A21F04F00E0845A /* KrakSpotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrakSpotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907B7A8A1A21F04F00E0845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907B7A8B1A21F04F00E0845A /* KrakSpotAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrakSpotAppTests.m; sourceTree = "<group>"; };
+		907B7A951A21F9BF00E0845A /* PRSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSStyleSheet.h; path = Code/Utils/PRSStyleSheet.h; sourceTree = "<group>"; };
+		907B7A961A21F9BF00E0845A /* PRSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSStyleSheet.m; path = Code/Utils/PRSStyleSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				907B7A761A21F04F00E0845A /* ViewController.h */,
 				907B7A771A21F04F00E0845A /* ViewController.m */,
 				907B7A791A21F04F00E0845A /* Main.storyboard */,
+				907B7A981A21F9C500E0845A /* Code */,
 				907B7A7C1A21F04F00E0845A /* Images.xcassets */,
 				907B7A7E1A21F04F00E0845A /* LaunchScreen.xib */,
 				907B7A6F1A21F04E00E0845A /* Supporting Files */,
@@ -117,6 +121,23 @@
 				907B7A8A1A21F04F00E0845A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		907B7A981A21F9C500E0845A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				907B7A991A21F9CA00E0845A /* Utils */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		907B7A991A21F9CA00E0845A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				907B7A951A21F9BF00E0845A /* PRSStyleSheet.h */,
+				907B7A961A21F9BF00E0845A /* PRSStyleSheet.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907B7A781A21F04F00E0845A /* ViewController.m in Sources */,
+				907B7A971A21F9BF00E0845A /* PRSStyleSheet.m in Sources */,
 				907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */,
 				907B7A721A21F04F00E0845A /* main.m in Sources */,
 			);
