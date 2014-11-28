@@ -39,24 +39,21 @@ KrakSpot #20?</string>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-jx-ARS">
-                                <rect key="frame" x="16" y="384" width="992" height="170"/>
+                                <rect key="frame" x="16" y="384" width="992" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFY-LO-MF6">
-                                        <rect key="frame" x="76" y="0.0" width="165" height="165"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="36" y="0.0" width="230" height="230"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="165" id="F4a-NP-7qk"/>
+                                            <constraint firstAttribute="width" constant="230" id="F4a-NP-7qk"/>
                                             <constraint firstAttribute="width" constant="110" id="Fhp-3O-tab"/>
                                             <constraint firstAttribute="width" constant="110" id="OMQ-N5-byB"/>
                                             <constraint firstAttribute="width" secondItem="EFY-LO-MF6" secondAttribute="height" multiplier="1:1" id="VdK-pz-zEP"/>
                                             <constraint firstAttribute="height" constant="110" id="cSJ-wv-n2f"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="kjm-6z-cSf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title=":(">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" backgroundImage="twarz_1.png"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="Fhp-3O-tab"/>
@@ -70,29 +67,29 @@ KrakSpot #20?</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-wZ-Bs2">
-                                        <rect key="frame" x="296" y="0.0" width="165" height="165"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="276" y="-2" width="230" height="230"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title=":|">
+                                        <state key="normal" backgroundImage="twarz_2.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nt-jd-BWe">
-                                        <rect key="frame" x="736" y="0.0" width="165" height="165"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="756" y="-2" width="230" height="230"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title=":D">
+                                        <state key="normal" backgroundImage="twarz_4.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYs-NX-OKD">
-                                        <rect key="frame" x="516" y="2" width="165" height="165"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="516" y="0.0" width="230" height="230"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title=":)">
+                                        <state key="normal" backgroundImage="twarz_3.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -107,14 +104,14 @@ KrakSpot #20?</string>
                                     <constraint firstItem="mOx-wZ-Bs2" firstAttribute="height" secondItem="EFY-LO-MF6" secondAttribute="height" id="La7-7a-djM"/>
                                     <constraint firstItem="mOx-wZ-Bs2" firstAttribute="width" secondItem="EFY-LO-MF6" secondAttribute="width" id="LbX-dy-jpV"/>
                                     <constraint firstItem="mOx-wZ-Bs2" firstAttribute="centerY" secondItem="EFY-LO-MF6" secondAttribute="centerY" id="LmH-M9-b4h"/>
-                                    <constraint firstItem="mOx-wZ-Bs2" firstAttribute="leading" secondItem="EFY-LO-MF6" secondAttribute="trailing" constant="55" id="MRw-RH-WeJ"/>
-                                    <constraint firstAttribute="height" constant="170" id="O40-wa-Iht"/>
-                                    <constraint firstItem="qYs-NX-OKD" firstAttribute="leading" secondItem="mOx-wZ-Bs2" secondAttribute="trailing" constant="55" id="Yph-lx-gpe"/>
+                                    <constraint firstItem="mOx-wZ-Bs2" firstAttribute="leading" secondItem="EFY-LO-MF6" secondAttribute="trailing" constant="10" id="MRw-RH-WeJ"/>
+                                    <constraint firstAttribute="height" constant="230" id="O40-wa-Iht"/>
+                                    <constraint firstItem="qYs-NX-OKD" firstAttribute="leading" secondItem="mOx-wZ-Bs2" secondAttribute="trailing" constant="10" id="Yph-lx-gpe"/>
                                     <constraint firstItem="qYs-NX-OKD" firstAttribute="centerY" secondItem="5Nt-jd-BWe" secondAttribute="centerY" constant="2" id="ZSx-UZ-Yc0"/>
                                     <constraint firstAttribute="centerX" secondItem="qYs-NX-OKD" secondAttribute="leading" constant="-20" id="a7H-lD-P3f"/>
                                     <constraint firstItem="qYs-NX-OKD" firstAttribute="leading" secondItem="mOx-wZ-Bs2" secondAttribute="trailing" constant="50" id="bPX-VY-KyG"/>
                                     <constraint firstItem="qYs-NX-OKD" firstAttribute="width" secondItem="5Nt-jd-BWe" secondAttribute="width" id="g5W-BZ-pXv"/>
-                                    <constraint firstItem="5Nt-jd-BWe" firstAttribute="leading" secondItem="qYs-NX-OKD" secondAttribute="trailing" constant="55" id="lC7-2x-RhZ"/>
+                                    <constraint firstItem="5Nt-jd-BWe" firstAttribute="leading" secondItem="qYs-NX-OKD" secondAttribute="trailing" constant="10" id="lC7-2x-RhZ"/>
                                     <constraint firstItem="qYs-NX-OKD" firstAttribute="height" secondItem="5Nt-jd-BWe" secondAttribute="height" id="omt-Ad-0qn"/>
                                     <constraint firstItem="mOx-wZ-Bs2" firstAttribute="width" secondItem="qYs-NX-OKD" secondAttribute="width" id="p9z-PQ-AQz"/>
                                     <constraint firstItem="mOx-wZ-Bs2" firstAttribute="leading" secondItem="EFY-LO-MF6" secondAttribute="trailing" constant="50" id="t3w-9U-X1V"/>
@@ -321,4 +318,10 @@ Cg
             <point key="canvasLocation" x="2790" y="-27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="twarz_1.png" width="250" height="250"/>
+        <image name="twarz_2.png" width="250" height="250"/>
+        <image name="twarz_3.png" width="250" height="250"/>
+        <image name="twarz_4.png" width="250" height="250"/>
+    </resources>
 </document>

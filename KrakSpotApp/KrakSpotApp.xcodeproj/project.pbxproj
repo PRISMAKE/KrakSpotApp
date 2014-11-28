@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9034EBEC1A28BF1B006A429C /* twarz_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBE81A28BF1B006A429C /* twarz_1@2x.png */; };
+		9034EBED1A28BF1B006A429C /* twarz_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBE91A28BF1B006A429C /* twarz_2@2x.png */; };
+		9034EBEE1A28BF1B006A429C /* twarz_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */; };
+		9034EBEF1A28BF1B006A429C /* twarz_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBEB1A28BF1B006A429C /* twarz_4@2x.png */; };
 		907B7A721A21F04F00E0845A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A711A21F04F00E0845A /* main.m */; };
 		907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A741A21F04F00E0845A /* AppDelegate.m */; };
 		907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A771A21F04F00E0845A /* PRSRateViewController.m */; };
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9034EBE81A28BF1B006A429C /* twarz_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_1@2x.png"; path = "Resources/Images/twarz_1@2x.png"; sourceTree = "<group>"; };
+		9034EBE91A28BF1B006A429C /* twarz_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_2@2x.png"; path = "Resources/Images/twarz_2@2x.png"; sourceTree = "<group>"; };
+		9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_3@2x.png"; path = "Resources/Images/twarz_3@2x.png"; sourceTree = "<group>"; };
+		9034EBEB1A28BF1B006A429C /* twarz_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_4@2x.png"; path = "Resources/Images/twarz_4@2x.png"; sourceTree = "<group>"; };
 		907B7A6C1A21F04E00E0845A /* KrakSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrakSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907B7A701A21F04F00E0845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907B7A711A21F04F00E0845A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9034EBF01A28BF20006A429C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9034EBF11A28BF28006A429C /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9034EBF11A28BF28006A429C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9034EBE81A28BF1B006A429C /* twarz_1@2x.png */,
+				9034EBE91A28BF1B006A429C /* twarz_2@2x.png */,
+				9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */,
+				9034EBEB1A28BF1B006A429C /* twarz_4@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		907B7A631A21F04E00E0845A = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +119,7 @@
 				907B7A981A21F9C500E0845A /* Code */,
 				907B7A7C1A21F04F00E0845A /* Images.xcassets */,
 				907B7A7E1A21F04F00E0845A /* LaunchScreen.xib */,
+				9034EBF01A28BF20006A429C /* Resources */,
 				907B7A6F1A21F04E00E0845A /* Supporting Files */,
 			);
 			path = KrakSpotApp;
@@ -221,8 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				907B7A7B1A21F04F00E0845A /* Main.storyboard in Resources */,
+				9034EBEE1A28BF1B006A429C /* twarz_3@2x.png in Resources */,
+				9034EBED1A28BF1B006A429C /* twarz_2@2x.png in Resources */,
 				907B7A801A21F04F00E0845A /* LaunchScreen.xib in Resources */,
 				907B7A7D1A21F04F00E0845A /* Images.xcassets in Resources */,
+				9034EBEC1A28BF1B006A429C /* twarz_1@2x.png in Resources */,
+				9034EBEF1A28BF1B006A429C /* twarz_4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

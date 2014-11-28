@@ -21,10 +21,6 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [PRSStyleSheet lightBackgroundColor];
-    [self.rateButtons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
-        [PRSStyleSheet configureButtonAppearance:obj
-                                           style:PRSButtonStyleRound];
-    }];
 }
 
 @end
