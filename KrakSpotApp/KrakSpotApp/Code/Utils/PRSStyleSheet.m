@@ -31,7 +31,7 @@
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case PRSButtonStyleRoundedCorners:
-            button.layer.cornerRadius = 9;
+            button.layer.cornerRadius = button.bounds.size.height/2.f;
             button.backgroundColor = [PRSStyleSheet _roundedButtonBackgroundColor];
             [button setTitleColor:[PRSStyleSheet _uiLightBlue] forState:UIControlStateNormal];
             break;

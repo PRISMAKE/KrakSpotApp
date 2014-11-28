@@ -11,6 +11,7 @@
 		9034EBED1A28BF1B006A429C /* twarz_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBE91A28BF1B006A429C /* twarz_2@2x.png */; };
 		9034EBEE1A28BF1B006A429C /* twarz_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */; };
 		9034EBEF1A28BF1B006A429C /* twarz_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBEB1A28BF1B006A429C /* twarz_4@2x.png */; };
+		9034EBF41A28C440006A429C /* PMKThanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9034EBF31A28C440006A429C /* PMKThanksViewController.m */; };
 		907B7A721A21F04F00E0845A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A711A21F04F00E0845A /* main.m */; };
 		907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A741A21F04F00E0845A /* AppDelegate.m */; };
 		907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A771A21F04F00E0845A /* PRSRateViewController.m */; };
@@ -36,6 +37,8 @@
 		9034EBE91A28BF1B006A429C /* twarz_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_2@2x.png"; path = "Resources/Images/twarz_2@2x.png"; sourceTree = "<group>"; };
 		9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_3@2x.png"; path = "Resources/Images/twarz_3@2x.png"; sourceTree = "<group>"; };
 		9034EBEB1A28BF1B006A429C /* twarz_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_4@2x.png"; path = "Resources/Images/twarz_4@2x.png"; sourceTree = "<group>"; };
+		9034EBF21A28C440006A429C /* PMKThanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKThanksViewController.h; path = Code/Controllers/PMKThanksViewController.h; sourceTree = "<group>"; };
+		9034EBF31A28C440006A429C /* PMKThanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKThanksViewController.m; path = Code/Controllers/PMKThanksViewController.m; sourceTree = "<group>"; };
 		907B7A6C1A21F04E00E0845A /* KrakSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrakSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907B7A701A21F04F00E0845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907B7A711A21F04F00E0845A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		9034EBF51A28C444006A429C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				907B7A761A21F04F00E0845A /* PRSRateViewController.h */,
+				907B7A771A21F04F00E0845A /* PRSRateViewController.m */,
+				9034EBF21A28C440006A429C /* PMKThanksViewController.h */,
+				9034EBF31A28C440006A429C /* PMKThanksViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		907B7A631A21F04E00E0845A = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +127,7 @@
 			children = (
 				907B7A731A21F04F00E0845A /* AppDelegate.h */,
 				907B7A741A21F04F00E0845A /* AppDelegate.m */,
-				907B7A761A21F04F00E0845A /* PRSRateViewController.h */,
-				907B7A771A21F04F00E0845A /* PRSRateViewController.m */,
+				9034EBF51A28C444006A429C /* Controllers */,
 				907B7A791A21F04F00E0845A /* Main.storyboard */,
 				907B7A981A21F9C500E0845A /* Code */,
 				907B7A7C1A21F04F00E0845A /* Images.xcassets */,
@@ -272,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9034EBF41A28C440006A429C /* PMKThanksViewController.m in Sources */,
 				907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */,
 				907B7A971A21F9BF00E0845A /* PRSStyleSheet.m in Sources */,
 				907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */,

@@ -173,10 +173,10 @@ KrakSpot #20?</string>
             </objects>
             <point key="canvasLocation" x="623" y="-110"/>
         </scene>
-        <!--View Controller-->
+        <!--Thanks View Controller-->
         <scene sceneID="yxu-pB-2I0">
             <objects>
-                <viewController id="1HQ-M3-CJv" sceneMemberID="viewController">
+                <viewController id="1HQ-M3-CJv" customClass="PMKThanksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IC5-5Z-G3g"/>
                         <viewControllerLayoutGuide type="bottom" id="qGa-dj-CjD"/>
@@ -186,8 +186,11 @@ KrakSpot #20?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-TW-m15">
-                                <rect key="frame" x="152" y="384" width="687" height="120"/>
+                                <rect key="frame" x="147" y="384" width="730" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="730" id="gdm-GE-bFC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <state key="normal" title="Tak, będę mówić!">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,8 +225,11 @@ Chętnię Cię wysłuchamy.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djh-BA-dO6">
-                                <rect key="frame" x="321" y="554" width="349" height="84"/>
+                                <rect key="frame" x="312" y="554" width="400" height="84"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="bVx-XN-drE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Nie, dziękuję.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,11 +243,15 @@ Chętnię Cię wysłuchamy.</string>
                             <constraint firstItem="djh-BA-dO6" firstAttribute="top" secondItem="ib3-TW-m15" secondAttribute="bottom" constant="50" id="AVK-3d-fHL"/>
                             <constraint firstAttribute="centerY" secondItem="BUJ-eW-sbP" secondAttribute="bottom" id="Lux-aX-7hW"/>
                             <constraint firstItem="djh-BA-dO6" firstAttribute="centerX" secondItem="ib3-TW-m15" secondAttribute="centerX" id="VK0-io-Hux"/>
-                            <constraint firstAttribute="centerX" secondItem="ib3-TW-m15" secondAttribute="centerX" constant="17" id="ZIf-PE-F5a"/>
+                            <constraint firstAttribute="centerX" secondItem="ib3-TW-m15" secondAttribute="centerX" id="ZIf-PE-F5a"/>
                             <constraint firstItem="BUJ-eW-sbP" firstAttribute="top" secondItem="IC5-5Z-G3g" secondAttribute="bottom" id="evw-Bd-VYW"/>
                             <constraint firstAttribute="centerY" secondItem="ib3-TW-m15" secondAttribute="top" id="mXi-Kv-qes"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noButton" destination="djh-BA-dO6" id="9eV-85-tc5"/>
+                        <outlet property="yesButton" destination="ib3-TW-m15" id="GyO-0z-nB2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKX-ZF-Nsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
