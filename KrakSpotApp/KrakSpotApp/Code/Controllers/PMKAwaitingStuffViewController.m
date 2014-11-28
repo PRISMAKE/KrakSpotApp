@@ -15,10 +15,25 @@
 
 @implementation PMKAwaitingStuffViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = [PRSStyleSheet highlightedBackgroundColor];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+#pragma mark - PMKAwaitingStuffViewController
+
+- (IBAction)didTapRepeatButton:(id)sender
+{
+    [self.navigationController setViewControllers:@[[self.navigationController.viewControllers firstObject]]
+                                         animated:YES];
 }
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UQ4-oL-Fb9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -168,6 +168,7 @@ KrakSpot #20?</string>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="cZh-Gn-Le6"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -180,7 +181,7 @@ KrakSpot #20?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="-110"/>
+            <point key="canvasLocation" x="1435" y="-110"/>
         </scene>
         <!--Thanks View Controller-->
         <scene sceneID="yxu-pB-2I0">
@@ -249,7 +250,7 @@ Chętnię Cię wysłuchamy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKX-ZF-Nsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="581"/>
+            <point key="canvasLocation" x="2530" y="581"/>
         </scene>
         <!--Awaiting Stuff View Controller-->
         <scene sceneID="n5F-ea-8x2">
@@ -282,6 +283,9 @@ Nasi ludzie już po Ciebie idą!</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapRepeatButton:" destination="iCu-Wk-ekf" eventType="touchUpInside" id="Hl4-5C-Qgd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6840820312" green="0.0" blue="0.22031071960000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -297,7 +301,25 @@ Nasi ludzie już po Ciebie idą!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSg-7A-kSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="-27"/>
+            <point key="canvasLocation" x="3476" y="-225"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fEk-Md-007">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="UQ4-oL-Fb9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mDF-ty-qRh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aq3-Hi-AGQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeo-Mb-7NN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-110"/>
         </scene>
     </scenes>
     <resources>

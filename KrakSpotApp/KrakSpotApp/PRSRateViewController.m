@@ -23,4 +23,9 @@
     self.view.backgroundColor = [PRSStyleSheet lightBackgroundColor];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 @end

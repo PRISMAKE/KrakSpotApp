@@ -9,7 +9,10 @@
 
 @implementation PMKThanksViewController
 
-- (void)viewDidLoad {
+#pragma mark - UIViewController
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     self.view.backgroundColor = [PRSStyleSheet lightBackgroundColor];
@@ -19,5 +22,11 @@
     [PRSStyleSheet configureButtonAppearance:self.noButton
                                        style:PRSButtonStyleRoundedCorners];
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 
 @end
