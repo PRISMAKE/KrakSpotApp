@@ -14,6 +14,7 @@
 		9034EBF41A28C440006A429C /* PMKThanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9034EBF31A28C440006A429C /* PMKThanksViewController.m */; };
 		9034EBF71A28C58B006A429C /* reload3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBF61A28C58B006A429C /* reload3@2x.png */; };
 		9034EBFA1A28C60B006A429C /* PMKAwaitingStuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9034EBF91A28C60B006A429C /* PMKAwaitingStuffViewController.m */; };
+		9034EBFC1A28C7D2006A429C /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBFB1A28C7D2006A429C /* Lato-Light.ttf */; };
 		907B7A721A21F04F00E0845A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A711A21F04F00E0845A /* main.m */; };
 		907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A741A21F04F00E0845A /* AppDelegate.m */; };
 		907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A771A21F04F00E0845A /* PRSRateViewController.m */; };
@@ -44,6 +45,7 @@
 		9034EBF61A28C58B006A429C /* reload3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reload3@2x.png"; path = "Resources/Images/reload3@2x.png"; sourceTree = "<group>"; };
 		9034EBF81A28C60B006A429C /* PMKAwaitingStuffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKAwaitingStuffViewController.h; path = Code/Controllers/PMKAwaitingStuffViewController.h; sourceTree = "<group>"; };
 		9034EBF91A28C60B006A429C /* PMKAwaitingStuffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKAwaitingStuffViewController.m; path = Code/Controllers/PMKAwaitingStuffViewController.m; sourceTree = "<group>"; };
+		9034EBFB1A28C7D2006A429C /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "Resources/Lato-Light.ttf"; sourceTree = "<group>"; };
 		907B7A6C1A21F04E00E0845A /* KrakSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrakSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907B7A701A21F04F00E0845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907B7A711A21F04F00E0845A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		9034EBF01A28BF20006A429C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9034EBFB1A28C7D2006A429C /* Lato-Light.ttf */,
 				9034EBF11A28BF28006A429C /* Images */,
 			);
 			name = Resources;
@@ -272,6 +275,7 @@
 				907B7A7B1A21F04F00E0845A /* Main.storyboard in Resources */,
 				9034EBEE1A28BF1B006A429C /* twarz_3@2x.png in Resources */,
 				9034EBED1A28BF1B006A429C /* twarz_2@2x.png in Resources */,
+				9034EBFC1A28C7D2006A429C /* Lato-Light.ttf in Resources */,
 				907B7A801A21F04F00E0845A /* LaunchScreen.xib in Resources */,
 				907B7A7D1A21F04F00E0845A /* Images.xcassets in Resources */,
 				9034EBF71A28C58B006A429C /* reload3@2x.png in Resources */,
