@@ -12,9 +12,14 @@
 
 #pragma mark + PRSStyleSheet
 
-+ (UIColor  *)lightBackgroundColor
++ (UIColor *)lightBackgroundColor
 {
     return [PRSStyleSheet _uiLightBlue];
+}
+
++ (UIColor  *)highlightedBackgroundColor
+{
+    return [PRSStyleSheet _uiRed];
 }
 
 + (void)configureButtonAppearance:(UIButton *)button style:(PRSButtonStyle)style
@@ -49,7 +54,7 @@
 
 + (UIColor *)_highlightedButtonBackgroundColor
 {
-    return [UIColor redColor];
+    return [PRSStyleSheet _uiRed];
 }
 
 + (UIColor *)_uiLightBlue
@@ -67,5 +72,14 @@
                             blue:222./255.
                            alpha:1.];
 }
+
++ (UIColor *)_uiRed
+{
+    return [UIColor colorWithRed:214./255.
+                           green:77./255.
+                            blue:54./255.
+                           alpha:1.];
+}
+
 
 @end

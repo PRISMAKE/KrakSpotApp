@@ -257,10 +257,10 @@ Chętnię Cię wysłuchamy.</string>
             </objects>
             <point key="canvasLocation" x="1718" y="581"/>
         </scene>
-        <!--View Controller-->
+        <!--Awaiting Stuff View Controller-->
         <scene sceneID="n5F-ea-8x2">
             <objects>
-                <viewController id="iCu-Wk-ekf" sceneMemberID="viewController">
+                <viewController id="iCu-Wk-ekf" customClass="PMKAwaitingStuffViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O1h-KY-WHX"/>
                         <viewControllerLayoutGuide type="bottom" id="yhT-yP-sfe"/>
@@ -299,14 +299,14 @@ Cg
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Dp-1qR">
-                                <rect key="frame" x="437" y="384" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.41675967261904767" green="0.0" blue="0.13840297453082198" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Dp-1qR">
+                                <rect key="frame" x="440" y="384" width="144" height="144"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="OhN-lD-esK"/>
+                                    <constraint firstAttribute="width" constant="144" id="OhN-lD-esK"/>
                                     <constraint firstAttribute="width" secondItem="hbk-Dp-1qR" secondAttribute="height" multiplier="1:1" id="xhi-pS-myE"/>
                                 </constraints>
-                                <state key="normal" title="-&gt;">
+                                <state key="normal" image="reload3.png" backgroundImage="reload3.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -329,6 +329,7 @@ Cg
         </scene>
     </scenes>
     <resources>
+        <image name="reload3.png" width="144" height="144"/>
         <image name="twarz_1.png" width="250" height="250"/>
         <image name="twarz_2.png" width="250" height="250"/>
         <image name="twarz_3.png" width="250" height="250"/>

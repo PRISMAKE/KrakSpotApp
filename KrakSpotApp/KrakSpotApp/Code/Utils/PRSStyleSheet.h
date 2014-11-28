@@ -17,7 +17,8 @@ typedef enum : NSUInteger {
 
 @interface PRSStyleSheet : NSObject
 
-+ (UIColor  *)lightBackgroundColor;
++ (UIColor *)lightBackgroundColor;
++ (UIColor *)highlightedBackgroundColor;
 + (void)configureButtonAppearance:(UIButton *)button style:(PRSButtonStyle)style;
 
 @end
