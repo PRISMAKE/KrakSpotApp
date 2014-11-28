@@ -136,13 +136,8 @@
 		907B7A6E1A21F04E00E0845A /* KrakSpotApp */ = {
 			isa = PBXGroup;
 			children = (
-				907B7A731A21F04F00E0845A /* AppDelegate.h */,
-				907B7A741A21F04F00E0845A /* AppDelegate.m */,
-				9034EBF51A28C444006A429C /* Controllers */,
-				907B7A791A21F04F00E0845A /* Main.storyboard */,
 				907B7A981A21F9C500E0845A /* Code */,
 				907B7A7C1A21F04F00E0845A /* Images.xcassets */,
-				907B7A7E1A21F04F00E0845A /* LaunchScreen.xib */,
 				9034EBF01A28BF20006A429C /* Resources */,
 				907B7A6F1A21F04E00E0845A /* Supporting Files */,
 			);
@@ -178,6 +173,11 @@
 		907B7A981A21F9C500E0845A /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				907B7A731A21F04F00E0845A /* AppDelegate.h */,
+				907B7A741A21F04F00E0845A /* AppDelegate.m */,
+				907B7A7E1A21F04F00E0845A /* LaunchScreen.xib */,
+				907B7A791A21F04F00E0845A /* Main.storyboard */,
+				9034EBF51A28C444006A429C /* Controllers */,
 				907B7A991A21F9CA00E0845A /* Utils */,
 			);
 			name = Code;
