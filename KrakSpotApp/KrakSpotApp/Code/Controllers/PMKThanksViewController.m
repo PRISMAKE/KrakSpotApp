@@ -28,5 +28,15 @@
     return UIStatusBarStyleLightContent;
 }
 
+#pragma mark - PMKThanksViewController
+
+- (IBAction)didTapNoThanksButton:(id)sender
+{
+    UIViewController *rootVC = [self.navigationController.viewControllers firstObject];
+    if (rootVC) {
+        [self.navigationController setViewControllers:@[rootVC]
+                                             animated:YES];
+    }
+}
 
 @end
