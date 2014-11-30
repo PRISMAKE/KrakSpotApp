@@ -37,7 +37,7 @@
                                 </constraints>
                                 <string key="text">Jak Ci się podobał
 KrakSpot #20?</string>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="110"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -205,12 +205,13 @@ KrakSpot #20?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-TW-m15">
-                                <rect key="frame" x="147" y="384" width="730" height="115"/>
+                                <rect key="frame" x="147" y="404" width="730" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6rh-Rv-KrM"/>
                                     <constraint firstAttribute="width" constant="730" id="gdm-GE-bFC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="85"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="70"/>
                                 <state key="normal" title="Tak, będę mówić!">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -224,20 +225,24 @@ KrakSpot #20?</string>
                                 <string key="text">Dzięki!
 A zdradzisz nam coś więcej?
 Chętnię Cię wysłuchamy.</string>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="65"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="75"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djh-BA-dO6">
-                                <rect key="frame" x="312" y="549" width="400" height="72"/>
+                                <rect key="frame" x="312" y="604" width="400" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6mB-lc-nFB"/>
                                     <constraint firstAttribute="width" constant="400" id="bVx-XN-drE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="40"/>
                                 <state key="normal" title="Nie, dziękuję.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapNoThanksButton:" destination="1HQ-M3-CJv" eventType="touchUpInside" id="UPM-aE-7QT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.34261064200000002" green="0.60445387819999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,7 +254,7 @@ Chętnię Cię wysłuchamy.</string>
                             <constraint firstItem="djh-BA-dO6" firstAttribute="centerX" secondItem="ib3-TW-m15" secondAttribute="centerX" id="VK0-io-Hux"/>
                             <constraint firstAttribute="centerX" secondItem="ib3-TW-m15" secondAttribute="centerX" id="ZIf-PE-F5a"/>
                             <constraint firstItem="BUJ-eW-sbP" firstAttribute="top" secondItem="IC5-5Z-G3g" secondAttribute="bottom" id="evw-Bd-VYW"/>
-                            <constraint firstAttribute="centerY" secondItem="ib3-TW-m15" secondAttribute="top" id="mXi-Kv-qes"/>
+                            <constraint firstAttribute="centerY" secondItem="ib3-TW-m15" secondAttribute="top" constant="-20" id="mXi-Kv-qes"/>
                         </constraints>
                     </view>
                     <connections>
@@ -277,35 +282,65 @@ Chętnię Cię wysłuchamy.</string>
                                 <rect key="frame" x="16" y="0.0" width="992" height="384"/>
                                 <string key="text">Zostań na miejscu!
 Nasi ludzie już po Ciebie idą!</string>
-                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Dp-1qR">
-                                <rect key="frame" x="440" y="384" width="144" height="144"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARL-w4-4Xz">
+                                <rect key="frame" x="0.0" y="384" width="1024" height="384"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Dp-1qR">
+                                        <rect key="frame" x="440" y="120" width="144" height="144"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="144" id="OhN-lD-esK"/>
+                                            <constraint firstAttribute="width" secondItem="hbk-Dp-1qR" secondAttribute="height" multiplier="1:1" id="xhi-pS-myE"/>
+                                        </constraints>
+                                        <state key="normal" image="reload3.png" backgroundImage="reload3.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapRepeatButton:" destination="iCu-Wk-ekf" eventType="touchUpInside" id="Hl4-5C-Qgd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="144" id="OhN-lD-esK"/>
-                                    <constraint firstAttribute="width" secondItem="hbk-Dp-1qR" secondAttribute="height" multiplier="1:1" id="xhi-pS-myE"/>
+                                    <constraint firstAttribute="centerX" secondItem="hbk-Dp-1qR" secondAttribute="centerX" id="4OD-7v-xLQ"/>
+                                    <constraint firstAttribute="centerY" secondItem="hbk-Dp-1qR" secondAttribute="centerY" id="af0-cf-n7R"/>
+                                    <constraint firstAttribute="centerY" secondItem="hbk-Dp-1qR" secondAttribute="centerY" id="pan-gd-bJU"/>
+                                    <constraint firstAttribute="centerX" secondItem="hbk-Dp-1qR" secondAttribute="centerX" id="skb-ci-TdW"/>
                                 </constraints>
-                                <state key="normal" image="reload3.png" backgroundImage="reload3.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapRepeatButton:" destination="iCu-Wk-ekf" eventType="touchUpInside" id="Hl4-5C-Qgd"/>
-                                </connections>
-                            </button>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4OD-7v-xLQ"/>
+                                        <exclude reference="af0-cf-n7R"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.6840820312" green="0.0" blue="0.22031071960000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="hbk-Dp-1qR" secondAttribute="top" id="2m2-3z-pfS"/>
                             <constraint firstItem="1qc-7w-eZb" firstAttribute="top" secondItem="O1h-KY-WHX" secondAttribute="bottom" id="4pF-dL-pr9"/>
                             <constraint firstItem="1qc-7w-eZb" firstAttribute="leading" secondItem="g4Z-lu-1GT" secondAttribute="leadingMargin" id="6bm-uo-alD"/>
-                            <constraint firstAttribute="centerX" secondItem="hbk-Dp-1qR" secondAttribute="centerX" id="86w-v5-Ja6"/>
+                            <constraint firstItem="ARL-w4-4Xz" firstAttribute="centerY" secondItem="O1h-KY-WHX" secondAttribute="top" constant="392" id="8MT-wn-xpm"/>
+                            <constraint firstItem="yhT-yP-sfe" firstAttribute="top" secondItem="ARL-w4-4Xz" secondAttribute="centerY" id="ADB-ZV-38x"/>
+                            <constraint firstItem="ARL-w4-4Xz" firstAttribute="leading" secondItem="g4Z-lu-1GT" secondAttribute="leadingMargin" constant="-16" id="ApZ-Bg-omO"/>
                             <constraint firstAttribute="centerY" secondItem="1qc-7w-eZb" secondAttribute="bottom" id="Iq1-ds-niO"/>
+                            <constraint firstAttribute="centerY" secondItem="ARL-w4-4Xz" secondAttribute="top" id="ST4-dS-hop"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ARL-w4-4Xz" secondAttribute="trailing" constant="-16" id="ZpM-80-642"/>
+                            <constraint firstItem="yhT-yP-sfe" firstAttribute="top" secondItem="ARL-w4-4Xz" secondAttribute="bottom" id="mw8-Nu-rnq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1qc-7w-eZb" secondAttribute="trailing" id="nRO-jl-Bgp"/>
+                            <constraint firstAttribute="centerY" secondItem="ARL-w4-4Xz" secondAttribute="centerY" id="uDT-yL-UiL"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8MT-wn-xpm"/>
+                                <exclude reference="uDT-yL-UiL"/>
+                                <exclude reference="ADB-ZV-38x"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSg-7A-kSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
