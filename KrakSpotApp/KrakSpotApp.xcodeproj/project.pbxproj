@@ -517,6 +517,7 @@
 				907B7A911A21F04F00E0845A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		907B7A921A21F04F00E0845A /* Build configuration list for PBXNativeTarget "KrakSpotAppTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +526,7 @@
 				907B7A941A21F04F00E0845A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
