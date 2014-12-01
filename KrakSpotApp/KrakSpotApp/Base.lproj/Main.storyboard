@@ -222,9 +222,9 @@ KrakSpot #20?</string>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9S-kq-o6g">
-                                <rect key="frame" x="16" y="72" width="348" height="40"/>
+                                <rect key="frame" x="16" y="72" width="290" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="348" id="HTl-QT-MMi"/>
+                                    <constraint firstAttribute="width" constant="290" id="HTl-QT-MMi"/>
                                     <constraint firstAttribute="height" constant="40" id="Iz8-V9-xPF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -232,7 +232,7 @@ KrakSpot #20?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kU-Uk-jKL">
-                                <rect key="frame" x="16" y="120" width="348" height="40"/>
+                                <rect key="frame" x="16" y="120" width="290" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="bcl-cV-Mol"/>
                                     <constraint firstAttribute="width" constant="53" id="qhI-fh-anf"/>
@@ -248,7 +248,7 @@ KrakSpot #20?</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w09-kL-NeY">
-                                <rect key="frame" x="16" y="216" width="348" height="40"/>
+                                <rect key="frame" x="16" y="216" width="290" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="oTo-gj-dNU"/>
                                 </constraints>
@@ -262,7 +262,7 @@ KrakSpot #20?</string>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YS9-dR-rVm">
-                                <rect key="frame" x="16" y="168" width="348" height="40"/>
+                                <rect key="frame" x="16" y="168" width="290" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="61g-A0-mWe"/>
                                 </constraints>
@@ -275,14 +275,61 @@ KrakSpot #20?</string>
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Thanks' dismiss time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcW-X6-bS1">
+                                <rect key="frame" x="306" y="72" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0he-Vd-WQN"/>
+                                    <constraint firstAttribute="width" constant="200" id="8vY-2f-yHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8vY-2f-yHo"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="iis-tG-PZg">
+                                <rect key="frame" x="304" y="101" width="282" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="na0-rQ-SVk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didChangeADismissTime:" destination="3lT-R8-UnO" eventType="valueChanged" id="grE-XU-EFT"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9q-lg-68x">
+                                <rect key="frame" x="304" y="180" width="282" height="31"/>
+                                <connections>
+                                    <action selector="didChangeBDismissTime:" destination="3lT-R8-UnO" eventType="valueChanged" id="BBh-HH-ESc"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Stuff awaiting' dismiss time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-Nx-dEu">
+                                <rect key="frame" x="306" y="151" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2LE-ax-FDR"/>
+                                    <constraint firstAttribute="width" constant="220" id="ZkT-Nc-x0j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZkT-Nc-x0j"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88303266428347804" green="0.90737000491496622" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="top" secondItem="YS9-dR-rVm" secondAttribute="bottom" constant="8" symbolic="YES" id="2E1-AZ-oFk"/>
+                            <constraint firstItem="iis-tG-PZg" firstAttribute="trailing" secondItem="BcW-X6-bS1" secondAttribute="trailing" id="5U3-Iq-ZlY"/>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="top" secondItem="YS9-dR-rVm" secondAttribute="bottom" constant="24" id="6TB-th-juU"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="top" secondItem="7kU-Uk-jKL" secondAttribute="bottom" constant="8" symbolic="YES" id="6pi-eh-Cfv"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="centerX" secondItem="YS9-dR-rVm" secondAttribute="centerX" id="BmI-sM-VlH"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="top" secondItem="f9S-kq-o6g" secondAttribute="bottom" constant="8" symbolic="YES" id="DTh-pp-Dyu"/>
+                            <constraint firstItem="c9q-lg-68x" firstAttribute="leading" secondItem="fNN-Nx-dEu" secondAttribute="leading" id="ET9-Y4-FOB"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" id="Hv5-05-UxA"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leadingMargin" constant="8" id="JSE-yJ-PHX"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leading" id="LUj-di-BPa"/>
@@ -291,26 +338,36 @@ KrakSpot #20?</string>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" id="Ne3-7n-21v"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="Nmf-ys-2AH"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="leading" secondItem="YS9-dR-rVm" secondAttribute="leading" id="PKW-HC-c00"/>
+                            <constraint firstItem="iis-tG-PZg" firstAttribute="leading" secondItem="BcW-X6-bS1" secondAttribute="leading" id="PeC-6V-Ptk"/>
+                            <constraint firstItem="BcW-X6-bS1" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="Roq-P6-duV"/>
                             <constraint firstAttribute="trailing" secondItem="htn-6f-mEe" secondAttribute="trailing" id="Syj-5m-az6"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="height" secondItem="7kU-Uk-jKL" secondAttribute="height" id="T1K-xm-Zar"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leadingMargin" id="TNm-GI-kkj"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="width" secondItem="7kU-Uk-jKL" secondAttribute="width" id="TXf-82-MR5"/>
+                            <constraint firstItem="fNN-Nx-dEu" firstAttribute="leading" secondItem="BcW-X6-bS1" secondAttribute="leading" id="UsK-d5-Y93"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="top" secondItem="f9S-kq-o6g" secondAttribute="bottom" constant="8" symbolic="YES" id="VQy-gz-cji"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="bottom" secondItem="wCm-eQ-Ub2" secondAttribute="top" id="VZ6-u2-hI9"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="width" secondItem="YS9-dR-rVm" secondAttribute="width" id="Vxp-EE-pyV"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="width" secondItem="YS9-dR-rVm" secondAttribute="width" id="WDt-7q-ZWd"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="leading" secondItem="7kU-Uk-jKL" secondAttribute="leading" id="XkT-14-YKi"/>
+                            <constraint firstItem="c9q-lg-68x" firstAttribute="trailing" secondItem="fNN-Nx-dEu" secondAttribute="trailing" id="Z1z-uZ-cDL"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="leading" secondItem="7kU-Uk-jKL" secondAttribute="leading" id="Z8Z-wF-e5y"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="leading" secondItem="YS9-dR-rVm" secondAttribute="leading" id="bsP-kG-t4G"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="height" secondItem="YS9-dR-rVm" secondAttribute="height" id="c8L-Kr-9Nq"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="height" secondItem="w09-kL-NeY" secondAttribute="height" id="cXy-e9-Tzv"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="height" secondItem="w09-kL-NeY" secondAttribute="height" id="ghc-A2-h4v"/>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="centerX" secondItem="YS9-dR-rVm" secondAttribute="centerX" id="hFf-pl-Yie"/>
+                            <constraint firstItem="c9q-lg-68x" firstAttribute="top" secondItem="fNN-Nx-dEu" secondAttribute="bottom" constant="8" id="iar-ei-TmL"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="leading" secondItem="w09-kL-NeY" secondAttribute="leading" id="jU6-gy-qE1"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="top" secondItem="7kU-Uk-jKL" secondAttribute="bottom" constant="8" id="kJT-48-FvY"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" constant="22" id="nVT-QO-qJa"/>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="top" secondItem="YS9-dR-rVm" secondAttribute="bottom" constant="8" symbolic="YES" id="ojg-jo-Pbt"/>
+                            <constraint firstItem="fNN-Nx-dEu" firstAttribute="top" secondItem="iis-tG-PZg" secondAttribute="bottom" constant="20" id="sP5-yK-hYH"/>
+                            <constraint firstItem="fNN-Nx-dEu" firstAttribute="trailing" secondItem="tIB-f5-Mo9" secondAttribute="trailingMargin" id="t9H-zH-D7H"/>
+                            <constraint firstItem="iis-tG-PZg" firstAttribute="top" secondItem="BcW-X6-bS1" secondAttribute="bottom" constant="8" id="voW-zo-6Ix"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="width" secondItem="w09-kL-NeY" secondAttribute="width" id="wCq-cH-ftR"/>
+                            <constraint firstItem="BcW-X6-bS1" firstAttribute="leading" secondItem="f9S-kq-o6g" secondAttribute="trailing" id="xgP-f1-lBL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BcW-X6-bS1" secondAttribute="trailing" id="zCW-TI-ymH"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -340,10 +397,14 @@ KrakSpot #20?</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ASlider" destination="iis-tG-PZg" id="qSY-iz-RWH"/>
+                        <outlet property="BSlider" destination="c9q-lg-68x" id="nyM-ap-cTK"/>
+                        <outlet property="dismissTimeLabel" destination="BcW-X6-bS1" id="YOL-h8-S6k"/>
                         <outlet property="happyLabel" destination="f9S-kq-o6g" id="k9a-fF-HXq"/>
                         <outlet property="neutralLabel" destination="YS9-dR-rVm" id="3XH-i8-hkq"/>
                         <outlet property="okLabel" destination="7kU-Uk-jKL" id="BT7-xT-UZX"/>
                         <outlet property="sadLabel" destination="w09-kL-NeY" id="0i6-Y0-7p1"/>
+                        <outlet property="stuffDismissTimeLabel" destination="fNN-Nx-dEu" id="0cF-Z8-205"/>
                         <outlet property="tableView" destination="htn-6f-mEe" id="dZQ-07-hnQ"/>
                     </connections>
                 </viewController>

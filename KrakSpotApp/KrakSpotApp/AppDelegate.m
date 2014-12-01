@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PMKAppSettings.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Set default app settings
+    if (![PMKAppSettings valueForAppSetting:kThanksVCAutomaticDismissInterval]) {
+        [PMKAppSettings updateAppSetting:kThanksVCAutomaticDismissInterval
+                                   value:@(10.)];
+    }
+    if (![PMKAppSettings valueForAppSetting:kStuffVCAutomaticDismissInterval]) {
+        [PMKAppSettings updateAppSetting:kStuffVCAutomaticDismissInterval
+                                   value:@(6.)];
+    }
+    
     return YES;
 }
 

@@ -8,6 +8,7 @@
 
 #import "PMKDataPreviewViewController.h"
 #import "PMKDataWriterReader.h"
+#import "PMKAppSettings.h"
 
 NSString * const kDataCellIdentifier = @"kDataCellIdentifier";
 
@@ -26,6 +27,11 @@ UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *neutralLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sadLabel;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (weak, nonatomic) IBOutlet UILabel *dismissTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stuffDismissTimeLabel;
+@property (weak, nonatomic) IBOutlet UISlider *ASlider;
+@property (weak, nonatomic) IBOutlet UISlider *BSlider;
+
 @end
 
 @implementation PMKDataPreviewViewController
@@ -56,10 +62,20 @@ UITableViewDelegate>
         }
     }];
     
-    [self _updateLabels];
+    [self _updateRatesLabels];
+    [self _updateTimeLabels];
+    [self _updateSliders];
 }
 
-- (void)_updateLabels
+- (void)_updateSliders
+{
+    NSNumber *AInterval = [PMKAppSettings valueForAppSetting:kThanksVCAutomaticDismissInterval];
+    NSNumber *BInterval = [PMKAppSettings valueForAppSetting:kStuffVCAutomaticDismissInterval];
+    self.ASlider.value = [AInterval floatValue];
+    self.BSlider.value = [BInterval floatValue];
+}
+
+- (void)_updateRatesLabels
 {
     CGFloat allRatesCount = self.happyCount + self.okCount + self.neutralCount + self.sadCount;
     if (allRatesCount != 0) {
@@ -81,6 +97,26 @@ UITableViewDelegate>
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)_updateTimeLabels
+{
+    NSNumber *AInterval = [PMKAppSettings valueForAppSetting:kThanksVCAutomaticDismissInterval];
+    NSNumber *BInterval = [PMKAppSettings valueForAppSetting:kStuffVCAutomaticDismissInterval];
+    
+    self.dismissTimeLabel.text = [NSString stringWithFormat:@"'Thanks' dismiss time: %li", (long)[AInterval integerValue]];
+    self.stuffDismissTimeLabel.text = [NSString stringWithFormat:@"'Stuff awaiting' dismiss time: %li", (long)[BInterval integerValue]];
+}
+
+- (IBAction)didChangeADismissTime:(UISlider *)sender
+{
+    [PMKAppSettings updateAppSetting:kThanksVCAutomaticDismissInterval value:@(sender.value)];
+    [self _updateTimeLabels];
+}
+
+- (IBAction)didChangeBDismissTime:(UISlider *)sender
+{
+    [PMKAppSettings updateAppSetting:kStuffVCAutomaticDismissInterval value:@(sender.value)];
+    [self _updateTimeLabels];
+}
 #pragma mark - <UITableViewDataSource>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

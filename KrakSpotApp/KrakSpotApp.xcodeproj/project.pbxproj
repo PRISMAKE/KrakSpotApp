@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900272EE1A2CA297006B093A /* PMKAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 900272ED1A2CA297006B093A /* PMKAppSettings.m */; };
 		9034EBEC1A28BF1B006A429C /* twarz_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBE81A28BF1B006A429C /* twarz_1@2x.png */; };
 		9034EBED1A28BF1B006A429C /* twarz_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBE91A28BF1B006A429C /* twarz_2@2x.png */; };
 		9034EBEE1A28BF1B006A429C /* twarz_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		900272EC1A2CA297006B093A /* PMKAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKAppSettings.h; path = Code/Utils/PMKAppSettings.h; sourceTree = "<group>"; };
+		900272ED1A2CA297006B093A /* PMKAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKAppSettings.m; path = Code/Utils/PMKAppSettings.m; sourceTree = "<group>"; };
 		9034EBE81A28BF1B006A429C /* twarz_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_1@2x.png"; path = "Resources/Images/twarz_1@2x.png"; sourceTree = "<group>"; };
 		9034EBE91A28BF1B006A429C /* twarz_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_2@2x.png"; path = "Resources/Images/twarz_2@2x.png"; sourceTree = "<group>"; };
 		9034EBEA1A28BF1B006A429C /* twarz_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twarz_3@2x.png"; path = "Resources/Images/twarz_3@2x.png"; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				907B7A961A21F9BF00E0845A /* PRSStyleSheet.m */,
 				903B58ED1A2C73D200927386 /* PMKDataWriterReader.h */,
 				903B58EE1A2C73D200927386 /* PMKDataWriterReader.m */,
+				900272EC1A2CA297006B093A /* PMKAppSettings.h */,
+				900272ED1A2CA297006B093A /* PMKAppSettings.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900272EE1A2CA297006B093A /* PMKAppSettings.m in Sources */,
 				9034EBF41A28C440006A429C /* PMKThanksViewController.m in Sources */,
 				907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */,
 				903B58EF1A2C73D200927386 /* PMKDataWriterReader.m in Sources */,
