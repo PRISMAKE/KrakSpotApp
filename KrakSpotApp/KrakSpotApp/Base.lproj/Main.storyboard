@@ -153,6 +153,7 @@ KrakSpot #20?</string>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.34261064200000002" green="0.60445387819999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZJy-Es-y1X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="17J-xJ-QmL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pXZ-jx-ARS" secondAttribute="trailing" id="8P6-MN-a7D"/>
@@ -176,6 +177,9 @@ KrakSpot #20?</string>
                                 <exclude reference="MJu-75-cym"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fJg-lv-XQx" appends="YES" id="bgW-yV-mdX"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="cZh-Gn-Le6"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -189,8 +193,57 @@ KrakSpot #20?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" numberOfTouchesRequired="2" id="fJg-lv-XQx">
+                    <connections>
+                        <action selector="showData:" destination="BYZ-38-t0r" id="SOa-lE-y6g"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1217" y="576"/>
+        </scene>
+        <!--Rates Preview-->
+        <scene sceneID="GEh-iL-ylv">
+            <objects>
+                <viewController id="3lT-R8-UnO" customClass="PMKDataPreviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X8P-gR-kdN"/>
+                        <viewControllerLayoutGuide type="bottom" id="wCm-eQ-Ub2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tIB-f5-Mo9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="htn-6f-mEe">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3lT-R8-UnO" id="yeb-Gu-Xwa"/>
+                                    <outlet property="delegate" destination="3lT-R8-UnO" id="yQ6-YX-WmX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" id="Hv5-05-UxA"/>
+                            <constraint firstItem="htn-6f-mEe" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leading" id="LUj-di-BPa"/>
+                            <constraint firstAttribute="trailing" secondItem="htn-6f-mEe" secondAttribute="trailing" id="Syj-5m-az6"/>
+                            <constraint firstItem="htn-6f-mEe" firstAttribute="bottom" secondItem="wCm-eQ-Ub2" secondAttribute="top" id="VZ6-u2-hI9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rates Preview" id="wwc-8Z-qBK">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="p2X-wE-rP7">
+                            <connections>
+                                <action selector="_didTapCloseButton:" destination="3lT-R8-UnO" id="psj-t7-WUS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="htn-6f-mEe" id="dZQ-07-hnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knK-ub-tVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="1418"/>
         </scene>
         <!--Thanks View Controller-->
         <scene sceneID="yxu-pB-2I0">
@@ -264,7 +317,7 @@ Chętnię Cię wysłuchamy.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKX-ZF-Nsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530" y="581"/>
+            <point key="canvasLocation" x="3342" y="581"/>
         </scene>
         <!--Awaiting Stuff View Controller-->
         <scene sceneID="n5F-ea-8x2">
@@ -364,6 +417,24 @@ Nasi ludzie już po Ciebie idą!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeo-Mb-7NN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="235" y="294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ox-5h-qnn">
+            <objects>
+                <navigationController storyboardIdentifier="dataPreviewVC" automaticallyAdjustsScrollViewInsets="NO" id="Ta3-tJ-Enn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JQH-i9-k5E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3lT-R8-UnO" kind="relationship" relationship="rootViewController" id="QRP-Rl-lZ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Olk-bq-gCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="1408"/>
         </scene>
     </scenes>
     <resources>

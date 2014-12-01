@@ -79,4 +79,11 @@ NSString * const kSadSeque = @"sad";
     }
 }
 
+- (IBAction)showData:(id)sender
+{
+    UIViewController *dataVC = [self.storyboard instantiateViewControllerWithIdentifier:@"dataPreviewVC"];
+    
+    [self presentViewController:dataVC animated:YES completion:nil];
+}
+
 @end
