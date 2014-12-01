@@ -204,7 +204,7 @@ KrakSpot #20?</string>
         <!--Rates Preview-->
         <scene sceneID="GEh-iL-ylv">
             <objects>
-                <viewController id="3lT-R8-UnO" customClass="PMKDataPreviewViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3lT-R8-UnO" customClass="PMKDataPreviewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X8P-gR-kdN"/>
                         <viewControllerLayoutGuide type="bottom" id="wCm-eQ-Ub2"/>

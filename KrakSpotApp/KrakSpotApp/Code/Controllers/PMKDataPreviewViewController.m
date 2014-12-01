@@ -96,6 +96,15 @@ UITableViewDelegate>
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[rate[@"timestamp"] floatValue]];
     NSString *dateSting = [self.dateFormatter stringFromDate:date];
     cell.textLabel.text = [NSString stringWithFormat:@"%@ ---- %@", rate[@"rateId"], dateSting];
+    
+    NSDictionary *imagesNames = @{kHappyId : @"twarz_4",
+                                  kOkId : @"twarz_3",
+                                  kNeutralId : @"twarz_2",
+                                  kSadId : @"twarz_1"};
+    NSString *identifier = rate[@"rateId"];
+    cell.imageView.image = [UIImage imageNamed:imagesNames[identifier]];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+
     return cell;
 }
 
