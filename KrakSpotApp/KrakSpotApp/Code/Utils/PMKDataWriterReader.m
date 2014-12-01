@@ -8,6 +8,11 @@
 
 #import "PMKDataWriterReader.h"
 
+NSString * const kHappyId = @"happy";
+NSString * const kOkId = @"ok";
+NSString * const kNeutralId = @"neutral";
+NSString * const kSadId = @"sad";
+
 @implementation PMKDataWriterReader
 
 #pragma mark - PMKDataWriterReader

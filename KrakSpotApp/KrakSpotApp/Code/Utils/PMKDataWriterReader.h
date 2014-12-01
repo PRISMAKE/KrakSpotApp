@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const kHappyId;
+extern NSString * const kOkId;
+extern NSString * const kNeutralId;
+extern NSString * const kSadId;
+
 @interface PMKDataWriterReader : NSObject
 
 + (void)writeRateWithIdentifier:(NSString *)identifier;

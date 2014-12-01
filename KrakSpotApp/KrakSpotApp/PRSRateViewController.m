@@ -10,14 +10,8 @@
 #import "PRSStyleSheet.h"
 #import "PMKDataWriterReader.h"
 
-NSString * const kHappySegue = @"happy";
-NSString * const kOkSegue = @"ok";
-NSString * const kNeutralSegue = @"neutral";
-NSString * const kSadSeque = @"sad";
-
 @interface PRSRateViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *rateButtons;
-
 @end
 
 @implementation PRSRateViewController
