@@ -15,6 +15,8 @@
 		9034EBF71A28C58B006A429C /* reload3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBF61A28C58B006A429C /* reload3@2x.png */; };
 		9034EBFA1A28C60B006A429C /* PMKAwaitingStuffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9034EBF91A28C60B006A429C /* PMKAwaitingStuffViewController.m */; };
 		9034EBFC1A28C7D2006A429C /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9034EBFB1A28C7D2006A429C /* Lato-Light.ttf */; };
+		903B58EC1A2C70BD00927386 /* PMKDataPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903B58EB1A2C70BD00927386 /* PMKDataPreviewViewController.m */; };
+		903B58EF1A2C73D200927386 /* PMKDataWriterReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 903B58EE1A2C73D200927386 /* PMKDataWriterReader.m */; };
 		907B7A721A21F04F00E0845A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A711A21F04F00E0845A /* main.m */; };
 		907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A741A21F04F00E0845A /* AppDelegate.m */; };
 		907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907B7A771A21F04F00E0845A /* PRSRateViewController.m */; };
@@ -46,6 +48,10 @@
 		9034EBF81A28C60B006A429C /* PMKAwaitingStuffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKAwaitingStuffViewController.h; path = Code/Controllers/PMKAwaitingStuffViewController.h; sourceTree = "<group>"; };
 		9034EBF91A28C60B006A429C /* PMKAwaitingStuffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKAwaitingStuffViewController.m; path = Code/Controllers/PMKAwaitingStuffViewController.m; sourceTree = "<group>"; };
 		9034EBFB1A28C7D2006A429C /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "Resources/Lato-Light.ttf"; sourceTree = "<group>"; };
+		903B58EA1A2C70BD00927386 /* PMKDataPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKDataPreviewViewController.h; path = Code/Controllers/PMKDataPreviewViewController.h; sourceTree = "<group>"; };
+		903B58EB1A2C70BD00927386 /* PMKDataPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKDataPreviewViewController.m; path = Code/Controllers/PMKDataPreviewViewController.m; sourceTree = "<group>"; };
+		903B58ED1A2C73D200927386 /* PMKDataWriterReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKDataWriterReader.h; path = Code/Utils/PMKDataWriterReader.h; sourceTree = "<group>"; };
+		903B58EE1A2C73D200927386 /* PMKDataWriterReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PMKDataWriterReader.m; path = Code/Utils/PMKDataWriterReader.m; sourceTree = "<group>"; };
 		907B7A6C1A21F04E00E0845A /* KrakSpotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrakSpotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907B7A701A21F04F00E0845A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907B7A711A21F04F00E0845A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 				9034EBF31A28C440006A429C /* PMKThanksViewController.m */,
 				9034EBF81A28C60B006A429C /* PMKAwaitingStuffViewController.h */,
 				9034EBF91A28C60B006A429C /* PMKAwaitingStuffViewController.m */,
+				903B58EA1A2C70BD00927386 /* PMKDataPreviewViewController.h */,
+				903B58EB1A2C70BD00927386 /* PMKDataPreviewViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 			children = (
 				907B7A951A21F9BF00E0845A /* PRSStyleSheet.h */,
 				907B7A961A21F9BF00E0845A /* PRSStyleSheet.m */,
+				903B58ED1A2C73D200927386 /* PMKDataWriterReader.h */,
+				903B58EE1A2C73D200927386 /* PMKDataWriterReader.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -300,8 +310,10 @@
 			files = (
 				9034EBF41A28C440006A429C /* PMKThanksViewController.m in Sources */,
 				907B7A781A21F04F00E0845A /* PRSRateViewController.m in Sources */,
+				903B58EF1A2C73D200927386 /* PMKDataWriterReader.m in Sources */,
 				907B7A971A21F9BF00E0845A /* PRSStyleSheet.m in Sources */,
 				907B7A751A21F04F00E0845A /* AppDelegate.m in Sources */,
+				903B58EC1A2C70BD00927386 /* PMKDataPreviewViewController.m in Sources */,
 				9034EBFA1A28C60B006A429C /* PMKAwaitingStuffViewController.m in Sources */,
 				907B7A721A21F04F00E0845A /* main.m in Sources */,
 			);
