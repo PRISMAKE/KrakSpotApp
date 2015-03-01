@@ -10,6 +10,7 @@
 
 NSString * const kThanksVCAutomaticDismissInterval = @"kThanksVCAutomaticDismissInterval";
 NSString * const kStuffVCAutomaticDismissInterval = @"kStuffVCAutomaticDismissInterval";
+NSString * const kMainScreenTitleLabelText = @"kMainScreenTitleLabelText";
 
 @implementation PMKAppSettings
 

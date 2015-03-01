@@ -10,6 +10,7 @@
 
 extern NSString * const kThanksVCAutomaticDismissInterval;
 extern NSString * const kStuffVCAutomaticDismissInterval;
+extern NSString * const kMainScreenTitleLabelText;
 
 @interface PMKAppSettings : NSObject
 

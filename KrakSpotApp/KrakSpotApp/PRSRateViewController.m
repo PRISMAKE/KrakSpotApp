@@ -9,8 +9,10 @@
 #import "PRSRateViewController.h"
 #import "PRSStyleSheet.h"
 #import "PMKDataWriterReader.h"
+#import "PMKAppSettings.h"
 
 @interface PRSRateViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *rateButtons;
 @end
 
@@ -23,6 +25,13 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [PRSStyleSheet lightBackgroundColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.titleLabel.text = [PMKAppSettings valueForAppSetting:kMainScreenTitleLabelText];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle

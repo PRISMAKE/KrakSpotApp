@@ -31,6 +31,7 @@ UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *stuffDismissTimeLabel;
 @property (weak, nonatomic) IBOutlet UISlider *ASlider;
 @property (weak, nonatomic) IBOutlet UISlider *BSlider;
+@property (weak, nonatomic) IBOutlet UITextField *mainScreenTitleTextField;
 
 @end
 
@@ -62,9 +63,16 @@ UITableViewDelegate>
         }
     }];
     
+    [self _updateView];
+}
+
+- (void)_updateView
+{
     [self _updateRatesLabels];
     [self _updateTimeLabels];
     [self _updateSliders];
+    
+    self.mainScreenTitleTextField.text = [PMKAppSettings valueForAppSetting:kMainScreenTitleLabelText];
 }
 
 - (void)_updateSliders
@@ -94,6 +102,7 @@ UITableViewDelegate>
 
 - (IBAction)_didTapCloseButton:(id)sender
 {
+    [PMKAppSettings updateAppSetting:kMainScreenTitleLabelText value:self.mainScreenTitleTextField.text];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

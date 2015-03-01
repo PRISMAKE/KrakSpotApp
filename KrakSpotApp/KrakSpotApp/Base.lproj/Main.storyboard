@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UQ4-oL-Fb9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UQ4-oL-Fb9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -186,6 +186,7 @@ KrakSpot #20?</string>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="titleLabel" destination="ZJy-Es-y1X" id="vkG-um-E6G"/>
                         <outletCollection property="rateButtons" destination="EFY-LO-MF6" id="bDq-HU-Ilp"/>
                         <outletCollection property="rateButtons" destination="mOx-wZ-Bs2" id="7c1-EX-uZL"/>
                         <outletCollection property="rateButtons" destination="qYs-NX-OKD" id="iFS-yG-VPw"/>
@@ -214,7 +215,7 @@ KrakSpot #20?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="htn-6f-mEe">
-                                <rect key="frame" x="0.0" y="256" width="600" height="344"/>
+                                <rect key="frame" x="0.0" y="386" width="600" height="214"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="3lT-R8-UnO" id="yeb-Gu-Xwa"/>
@@ -320,6 +321,17 @@ KrakSpot #20?</string>
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Screen Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB7-Y1-eHs">
+                                <rect key="frame" x="16" y="264" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyG-TB-z4D">
+                                <rect key="frame" x="306" y="261" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.88303266428347804" green="0.90737000491496622" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -330,15 +342,19 @@ KrakSpot #20?</string>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="centerX" secondItem="YS9-dR-rVm" secondAttribute="centerX" id="BmI-sM-VlH"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="top" secondItem="f9S-kq-o6g" secondAttribute="bottom" constant="8" symbolic="YES" id="DTh-pp-Dyu"/>
                             <constraint firstItem="c9q-lg-68x" firstAttribute="leading" secondItem="fNN-Nx-dEu" secondAttribute="leading" id="ET9-Y4-FOB"/>
+                            <constraint firstItem="gyG-TB-z4D" firstAttribute="trailing" secondItem="tIB-f5-Mo9" secondAttribute="trailingMargin" id="FC4-Tw-rVc"/>
+                            <constraint firstItem="mB7-Y1-eHs" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" constant="8" symbolic="YES" id="HQT-qs-Gvs"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" id="Hv5-05-UxA"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leadingMargin" constant="8" id="JSE-yJ-PHX"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="leading" secondItem="tIB-f5-Mo9" secondAttribute="leading" id="LUj-di-BPa"/>
+                            <constraint firstItem="gyG-TB-z4D" firstAttribute="leading" secondItem="c9q-lg-68x" secondAttribute="leading" id="Lwd-BT-53Z"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="height" secondItem="YS9-dR-rVm" secondAttribute="height" id="MB0-X6-XDO"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="top" secondItem="YS9-dR-rVm" secondAttribute="top" id="Mnp-OL-dtq"/>
-                            <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" id="Ne3-7n-21v"/>
+                            <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" constant="130" id="Ne3-7n-21v"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="Nmf-ys-2AH"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="leading" secondItem="YS9-dR-rVm" secondAttribute="leading" id="PKW-HC-c00"/>
                             <constraint firstItem="iis-tG-PZg" firstAttribute="leading" secondItem="BcW-X6-bS1" secondAttribute="leading" id="PeC-6V-Ptk"/>
+                            <constraint firstItem="gyG-TB-z4D" firstAttribute="baseline" secondItem="mB7-Y1-eHs" secondAttribute="baseline" id="QDW-jD-Jel"/>
                             <constraint firstItem="BcW-X6-bS1" firstAttribute="top" secondItem="X8P-gR-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="Roq-P6-duV"/>
                             <constraint firstAttribute="trailing" secondItem="htn-6f-mEe" secondAttribute="trailing" id="Syj-5m-az6"/>
                             <constraint firstItem="f9S-kq-o6g" firstAttribute="height" secondItem="7kU-Uk-jKL" secondAttribute="height" id="T1K-xm-Zar"/>
@@ -355,11 +371,13 @@ KrakSpot #20?</string>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="leading" secondItem="YS9-dR-rVm" secondAttribute="leading" id="bsP-kG-t4G"/>
                             <constraint firstItem="7kU-Uk-jKL" firstAttribute="height" secondItem="YS9-dR-rVm" secondAttribute="height" id="c8L-Kr-9Nq"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="height" secondItem="w09-kL-NeY" secondAttribute="height" id="cXy-e9-Tzv"/>
+                            <constraint firstItem="w09-kL-NeY" firstAttribute="leading" secondItem="mB7-Y1-eHs" secondAttribute="leading" id="dRb-We-SfF"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="height" secondItem="w09-kL-NeY" secondAttribute="height" id="ghc-A2-h4v"/>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="centerX" secondItem="YS9-dR-rVm" secondAttribute="centerX" id="hFf-pl-Yie"/>
                             <constraint firstItem="c9q-lg-68x" firstAttribute="top" secondItem="fNN-Nx-dEu" secondAttribute="bottom" constant="8" id="iar-ei-TmL"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="leading" secondItem="w09-kL-NeY" secondAttribute="leading" id="jU6-gy-qE1"/>
                             <constraint firstItem="YS9-dR-rVm" firstAttribute="top" secondItem="7kU-Uk-jKL" secondAttribute="bottom" constant="8" id="kJT-48-FvY"/>
+                            <constraint firstItem="w09-kL-NeY" firstAttribute="top" secondItem="mB7-Y1-eHs" secondAttribute="top" id="n5n-Hi-Qcq"/>
                             <constraint firstItem="htn-6f-mEe" firstAttribute="top" secondItem="w09-kL-NeY" secondAttribute="bottom" constant="22" id="nVT-QO-qJa"/>
                             <constraint firstItem="w09-kL-NeY" firstAttribute="top" secondItem="YS9-dR-rVm" secondAttribute="bottom" constant="8" symbolic="YES" id="ojg-jo-Pbt"/>
                             <constraint firstItem="fNN-Nx-dEu" firstAttribute="top" secondItem="iis-tG-PZg" secondAttribute="bottom" constant="20" id="sP5-yK-hYH"/>
@@ -383,6 +401,7 @@ KrakSpot #20?</string>
                                 <exclude reference="ghc-A2-h4v"/>
                                 <exclude reference="6TB-th-juU"/>
                                 <exclude reference="hFf-pl-Yie"/>
+                                <exclude reference="n5n-Hi-Qcq"/>
                                 <exclude reference="ojg-jo-Pbt"/>
                                 <exclude reference="Hv5-05-UxA"/>
                                 <exclude reference="nVT-QO-qJa"/>
@@ -401,6 +420,7 @@ KrakSpot #20?</string>
                         <outlet property="BSlider" destination="c9q-lg-68x" id="nyM-ap-cTK"/>
                         <outlet property="dismissTimeLabel" destination="BcW-X6-bS1" id="YOL-h8-S6k"/>
                         <outlet property="happyLabel" destination="f9S-kq-o6g" id="k9a-fF-HXq"/>
+                        <outlet property="mainScreenTitleTextField" destination="gyG-TB-z4D" id="iOB-5C-1v6"/>
                         <outlet property="neutralLabel" destination="YS9-dR-rVm" id="3XH-i8-hkq"/>
                         <outlet property="okLabel" destination="7kU-Uk-jKL" id="BT7-xT-UZX"/>
                         <outlet property="sadLabel" destination="w09-kL-NeY" id="0i6-Y0-7p1"/>

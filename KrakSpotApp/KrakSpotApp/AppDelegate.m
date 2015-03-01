@@ -27,6 +27,9 @@
         [PMKAppSettings updateAppSetting:kStuffVCAutomaticDismissInterval
                                    value:@(6.)];
     }
+    if (![PMKAppSettings valueForAppSetting:kMainScreenTitleLabelText]) {
+        [PMKAppSettings updateAppSetting:kMainScreenTitleLabelText value:@"Jak ci się spodobał KrakSpot"];
+    }
     
     return YES;
 }
