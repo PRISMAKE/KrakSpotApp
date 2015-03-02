@@ -15,6 +15,7 @@ extern NSString * const kSadId;
 
 @interface PMKDataWriterReader : NSObject
 
++ (void)saveRatesToCSVFile:(void (^)(NSURL *fileURL))complectionHandler;
 + (void)writeRateWithIdentifier:(NSString *)identifier;
 + (NSArray *)readRates;
 

@@ -9,12 +9,14 @@
 #import "PMKDataPreviewViewController.h"
 #import "PMKDataWriterReader.h"
 #import "PMKAppSettings.h"
+#import <MessageUI/MessageUI.h>
 
 NSString * const kDataCellIdentifier = @"kDataCellIdentifier";
 
 @interface PMKDataPreviewViewController () <
 UITableViewDataSource,
-UITableViewDelegate>
+UITableViewDelegate,
+MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
@@ -32,6 +34,7 @@ UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UISlider *ASlider;
 @property (weak, nonatomic) IBOutlet UISlider *BSlider;
 @property (weak, nonatomic) IBOutlet UITextField *mainScreenTitleTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 @end
 
@@ -126,6 +129,22 @@ UITableViewDelegate>
     [PMKAppSettings updateAppSetting:kStuffVCAutomaticDismissInterval value:@(sender.value)];
     [self _updateTimeLabels];
 }
+
+- (IBAction)_didTapSendButton:(id)sender {
+    [PMKDataWriterReader saveRatesToCSVFile:^(NSURL *fileURL) {
+        NSString *email = self.emailTextField.text;
+        MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
+        [mailVC setSubject:@"KrakSpot Rates Data"];
+        [mailVC setMessageBody:@"KrakSpot Rates." isHTML:NO];
+        [mailVC setToRecipients:@[email]];
+        NSData *attachmendData = [NSData dataWithContentsOfURL:fileURL];
+        [mailVC addAttachmentData:attachmendData mimeType:@"text/csv" fileName:@"rates.csv"];
+        mailVC.mailComposeDelegate = self;
+        [self presentViewController:mailVC animated:YES completion:nil];
+    }];
+}
+
+
 #pragma mark - <UITableViewDataSource>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -154,5 +173,12 @@ UITableViewDelegate>
 }
 
 #pragma mark - <UITableViewDelegate>
+
+#pragma mark - <MFMailComposeViewoControllerDelegate>
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

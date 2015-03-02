@@ -42,6 +42,25 @@ NSString * const kSadId = @"sad";
     }
 }
 
++ (void)saveRatesToCSVFile:(void (^)(NSURL *fileURL))complectionHandler
+{
+    NSArray *rates = [PMKDataWriterReader readRates];
+    __block NSString *csvContent = @"";
+    [rates enumerateObjectsUsingBlock:^(NSDictionary *rateInfo, NSUInteger idx, BOOL *stop) {
+        csvContent = [NSString stringWithFormat:@"%@%@,%@\n", csvContent, rateInfo[@"rateId"], rateInfo[@"timestamp"]];
+    }];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *csvURL = [PMKDataWriterReader _csvFileURL];
+    [fileManager removeItemAtURL:csvURL error:nil];
+    NSData *csvData = [csvContent dataUsingEncoding:NSUTF8StringEncoding];
+    [fileManager createFileAtPath:csvURL.path contents:csvData attributes:nil];
+    
+    if (complectionHandler) {
+        complectionHandler(csvURL);
+    }
+}
+
 + (NSArray *)readRates
 {
     NSData *data = [NSData dataWithContentsOfURL:[PMKDataWriterReader _dataFileURL]];
@@ -67,6 +86,14 @@ NSString * const kSadId = @"sad";
     NSString *plistPath = [path stringByAppendingPathComponent:@"data.plist"];
     NSURL *plistURL = [NSURL fileURLWithPath:plistPath];
     return plistURL;
+}
+
++ (NSURL *)_csvFileURL
+{
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *csvPath = [path stringByAppendingPathComponent:@"csvData.csv"];
+    NSURL *csvURL = [NSURL fileURLWithPath:csvPath];
+    return csvURL;
 }
 
 @end
